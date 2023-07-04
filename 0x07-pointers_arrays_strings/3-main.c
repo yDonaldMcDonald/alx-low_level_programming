@@ -8,9 +8,11 @@
  */
 int main(void)
 {
-    int n;
+    char *s = "hello, world";
+    char *f = "oleh";
+    unsigned int n;
 
-    n = add(89, 9);
-    printf("%d\n", n);
+    n = _strspn(s, f);
+    printf("%u\n", n);
     return (0);
 }
